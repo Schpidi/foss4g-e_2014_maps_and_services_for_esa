@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Maps and Services for ESA powered by Open Data &amp; Open Source</title>
+
+        <meta name="description" content="Maps and Services for ESA powered by Open Data &amp; Open Source presentation at FOSS4G-Europe 2014.">
+        <meta name="author" content="Stephan Meissl">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/eox.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                <!-- Cover page -->
+                <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                    <h2 style="padding: 30px 20px 0 20px;">Maps and Services for ESA powered by Open Data &amp; Open Source</h2>
+                    <p>FOSS4G-Europe 2014 - Bremen - 2014-07-15</p>
+                    <a class="image" href="http://eox.at"><img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/eox-logo.png" alt="EOX IT Services GmbH, Austria" title="EOX IT Services GmbH, Austria"/></a>
+                    <p><a href="mailto:office@eox.at">office@eox.at</a> <a href="https://twitter.com/eox_a">@eox_a</a></p>
+                    <p>Stephan Meißl <a href="mailto:stephan.meissl@eox.at">stephan.meissl@eox.at</a> <a href="https://twitter.com/Schpidi">@Schpidi</a></p>
+                    <p>Joachim Ungar <a href="mailto:joachim.ungar@eox.at">joachim.ungar@eox.at</a> <a href="https://twitter.com/ungarjo">@ungarjo</a></p>
+                    <p>Fabian Schindler <a href="mailto:fabian.schindler@eox.at">fabian.schindler@eox.at</a></p>
+                    <br/>
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; margin:0 0 12px 0;" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><small>&nbsp;This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small></p>
+                    <aside class="notes">
+                        <p>Guten Morgen, vielen Dank für die nette Einführung. Mein Name ist Stephan Meißl und ich freue mich Ihnen heute einige Highlights unserer Arbeit präsentieren zu können.</p>
+                        <p>Sind Sie auch schon mal auf der Suche nach Satelliten- oder Erdbeobachtungsdaten verzweifelt? Wir wollen das gerne ändern.</p>
+                        <p>Warum nicht die Satellitendaten gleich direkt auf einer Karte anzeigen? Karte und Zeitachse  unterstützen die Suche optimal und die Daten können sofort visuell evaluiert werden vor dem Bestellen und Herunterladen.</p>
+                    </aside>
+                </section>
+
+                <!-- Introduction & Problem -->
+                <section>
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <img class="stretch imagebox" src="./images/ngeo_1_1.png"/>
+                        <aside class="notes">
+                            <p>Ignorieren Sie mal das Drumherum, da komme ich gleich dazu, und konzentrieren Sie sich auf die beiden Satellitenbilder in der Mitte. Wo befinden wir uns?</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <img class="stretch" src="./images/ngeo_1_2.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <img class="stretch" src="./images/ngeo_1_3.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <img class="stretch" src="./images/ngeo_2_1.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <img class="stretch" src="./images/ngeo_2_2.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <img class="stretch" src="./images/ngeo_2_3.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_3_start.png"/>
+                        <aside class="notes">
+                            <p>Hier können Sie den ngEO Client direkt nach dem Start sehen. Es ist noch kein Datensatz ausgewählt und keine Suche durchgeführt.</p>
+                        </aside>
+                    </section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_4_suche.png"/>
+                        <aside class="notes">
+                            <p>Suche</p>
+                        </aside>
+                    </section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_5_suche_detail.png"/>
+                        <aside class="notes">
+                            <p>Suche Detail</p>
+                        </aside>
+                    </section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_6_3d.png"/>
+                        <aside class="notes">
+                            <p>3D</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_03_terrain_europe_l6.png" class="box">
+                        <h2>ESA User Services - ngEO</h2>
+                        <ul>
+                            <li class="fragment">Operationales Service für den Online Zugang zu EO Daten</li>
+                            <li class="fragment">Daten von GMES und ESA Satelliten Missionen</li>
+                            <li class="fragment">Generisches System zur generellen Verwendung</li>
+                            <li class="fragment">Demo <a href="http://ngeo.eox.at/" target="_blank">ngeo.eox.at</a></li>
+                        </ul>
+                        <aside class="notes">
+                            <p>Das Hauptziel der neuen ESA Dienste für Nutzer von Erdbeobachtungsdaten ist es einen operationalen Online Zugang zu den Daten bereitzustellen.</p>
+                            <p>Die verfügbaren Erdbeobachtungsdaten werden sowohl die Aufnahmen der GMES Satelliten als auch aller anderen ESA Satelliten Missionen sein.</p>
+                            <p>GMES, kurz für "Global Monitoring for Environment &amp; Security", oder Copernicus ist die Europäischen Initiative für Erdbeobachtung. Dabei werden fünf verschiedene Arten von Satelliten die sogenannten Sentinels betrieben werden. Die Starts der ersten 3 sind für nächstes Jahr geplant.</p>
+                            <p>ESA managt die Entwicklung eines generischen Systems, dass auch für andere Missionen zur Verfügung steht.</p>
+                            <p>Wer Interesse hat kann gerne die Demo ausprobieren, aber bitte beachten, dass es eine Demo ist und sich ändern kann.</p>
+                            <p>Wie schon gesagt, EOX ist im Rahmen dieser Entwicklung für den sogenannten Browse Server verantwortlich.</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_03_terrain_europe_l6.png" class="box">
+                        <h3>ngEO Browse Server - Architektur</h3>
+                        <img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/browse_server_architecture.png" alt="Browse Server Architektur" title="Browse Server Architektur"/>
+                        <aside class="notes">
+                            <ul>
+                                <li>Ausschließlich basierend auf Open Source Software wie</li>
+                                <ul>
+                                    <li><a href="http://gdal.org">GDAL</a> für die Verarbeitung von Rasterdaten</li>
+                                    <li><a href="http://mapserver.org">MapServer</a> für die Unterstützung von standardkonformen Services</li>
+                                    <li><a href="http://eoxserver.org">EOxServer</a> für die Erdbeobachtungserweiterungen der OGC Standards</li>
+                                    <li><a href="http://mapserver.org/mapcache/index.html">MapCache</a> für extrem hochperformante WMTS und WMS Services</li>
+                                </ul>
+                                <li>Standardkonforme Auslieferung von Karten und Vorschaubildern (Browse Images) via OGC WMTS und WMS</li>
+                                <li>Zentrales Konfigurationsmanagement durch ngEO Controller</li>
+                                <li>Daten von ngEO FEED</li>
+                                <li>Authentifizierung mit Shibboleth</li>
+                                <li>Autorisierung durch ngEO Web Server</li>
+                                <li>Verarbeitung von Rasterdaten: Geo-Referenzierung, Footprint, Projektion, Alpha, Tiling, Overviews, Compression</li>
+                            </ul>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_03_terrain_europe_l6.png" class="box">
+                        <h2><a href="http://mapserver.org/trunk/en/mapcache/index.html">MapCache</a> Zeitachse</h2>
+                        <pre><code data-trim contenteditable>
+<tileset name="foss4g">
+    ...
+    <timedimension type="sqlite" default="2014">
+        <dbfile>/var/ngeob_data/mapcache.sqlite</dbfile>
+        <query>
+            select strftime('%Y-%m-%dT%H:%M:%SZ',start_time)||'/'||
+                   strftime('%Y-%m-%dT%H:%M:%SZ',end_time)
+            from time
+            where source_id=:tileset and
+                  datetime(:end_timestamp,'unixepoch')&gt;=start_time and
+                  end_time&gt;=datetime(:start_timestamp,'unixepoch') and
+                  maxx&gt;=:minx and
+                  maxy&gt;=:miny and
+                  :maxx&gt;=minx and
+                  :maxy&gt;=miny
+            order by end_time
+            limit 100
+        </query>
+    </timedimension>
+</tileset>
+                        </code></pre>
+                        <aside class="notes">
+                            <p>Zeitpunkte oder Zeitintervalle selektierbar</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_04_terrain_berlin_l7.png" class="box">
+                        <img class="stretch" src="./images/eox-maps.png"/>
+                        <aside class="notes">
+                            <p>EOX::Maps ist unser Beitrag zum Open Data indem wir globale Karten anbieten.</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_05_terrain_berlin_l8.png" class="box">
+                        <h2><a href="http://maps.eox.at">maps.eox.at</a></h2>
+                        <ul>
+                            <li>Offene standardisierte Schnittstellen</li>
+                            <li>Open Data</li>
+                            <li>Open Source Software</li>
+                            <li class="fragment">EOX bietet
+                                <ul>
+                                    <li>Hosted, self-hosted (intranet) oder offline</li>
+                                    <li>Spezielle Projektionen</li>
+                                    <li>Eigener Kartenstil</li>
+                                    <li>Eigene Daten inklusive Zeitachse</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_06_terrain_berlin_l9.png" class="box">
+                        <h2>Open Data</h2>
+                        <ul>
+                            <li>OpenStreetMap &copy; <a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap contributors</a></li>
+                            <li>NaturalEarth <a href="http://www.naturalearthdata.com/about/terms-of-use/" target="_blank">public domain</a></li>
+                            <li>EUDEM &copy; Produced using Copernicus data and<br/>information funded by the European Union</li>
+                            <li>SRTM &copy; <a href="http://www.nasa.gov" target="_blank">NASA</a></li>
+                            <li>GTOPO30</li>
+                            <li>CleanTOPO2 public domain</li>
+                            <li>GlobCover &copy; <a href="http://esa.int" target="_blank">ESA</a></li>
+                            <li>Map design © <a href="http://eox.at">EOX</a></li>
+                        </ul>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_07_terrain_berlin_l10.png" class="box">
+                        <h2><a href="http://data.eox.at/eudem" target="_blank">data.eox.at/eudem</a></h2>
+                        <p>INSPIRE View &amp; Download Service Prototyp via WMS/WMTS und WCS</p>
+                        <img class="stretch" src="./images/eudem.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+<!--
+                    <section data-background="images/map_08_terrain_berlin_l11.png" class="box">
+                        <img class="stretch" src="./images/dream_zeitachse.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+-->
+
+                    <section data-background="images/map_08_terrain_berlin_l11.png" class="box">
+                        <img class="stretch" src="./images/v-manip_3d.png"/>
+                        <aside class="notes">
+                            <p>Zeitachse: Was ist sichtbar? Zoom zu Szene.</p>
+                            <p>3D Daten</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_08_terrain_berlin_l11.png" class="box">
+                        <img class="stretch" src="./images/v-manip_analytics.png"/>
+                        <aside class="notes">
+                            <p>Rechts die near infrared und middle range infrared Werte zum detektieren von Vegetation</p>
+                            <p>Blauer Punkt über See: Werte bleiben konstant</p>
+                            <p>Oranger Punkt über Feld: Werte ändern sich über die Zeit, Feld wächst</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_09_terrain_berlin_l12.png" class="box">
+                        <h2>Fazit</h2>
+                        <ul>
+                            <li class="fragment">Es existieren ausgereifte Open Source Software Komponenten bereit für den operationalen Einsatz</li>
+                            <li class="fragment">Anpassungen und Erweiterungen sind in Open Source Software Komponenten äußerst einfach möglich</li>
+                            <li class="fragment">Neue Funktionalität fließt zurück und steht allen zur Verfügung</li>
+                            <li class="fragment">Globale Open Data Datensätze in guter Abdeckung und Genauigkeit stehen zur Verfügung</li>
+                            <li class="fragment">Die Zeitachse ist und wird immer wichtiger</li>
+                            <li class="fragment"><a href="http://esa.int"><img style="border-width:0; margin:-15px 0;" src="./images/esa-logo.png" alt="European Space Agency - ESA" title="European Space Agency - ESA"/></a> Dank an ESA für die Unterstützung von Open Source</li>
+                        </ul>
+                        <aside class="notes">
+                            <p></p>
+                            <p>Ich möchte mich bei der Europäischen Weltraumorganisation (ESA) bedanken die im Rahmen mehrerer Projekte wie z.B. ngEO dazu beigetragen hat die verwendeten Open Source Lösungen maßgeblich weiterzuentwickeln.</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_09_terrain_berlin_l12.png" class="box">
+                        <h2 style="padding: 30px 20px 0 20px;">Maps for ESA</h2>
+                        <p>FOSSGIS 2014 - Berlin - 2014-03-21</p>
+                        <h4><a href="http://schpidi.github.io/fossgis2014_maps-for-esa">schpidi.github.io/fossgis2014_maps-for-esa</a></h4>
+                        <a class="image" href="http://eox.at"><img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/eox-logo.png" alt="EOX IT Services GmbH, Austria" title="EOX IT Services GmbH, Austria"/></a>
+                        <p><a href="mailto:office@eox.at">office@eox.at</a> <a href="https://twitter.com/eox_a">@eox_a</a></p>
+                        <p>Stephan Meißl <a href="mailto:stephan.meissl@eox.at">stephan.meissl@eox.at</a> <a href="https://twitter.com/Schpidi">@Schpidi</a></p>
+                        <br/>
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; margin:0 0 12px 0;" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><small>&nbsp;This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small></p>
+                        <aside class="notes">
+                            <p>Vielen Dank für Ihre Aufmerksamkeit.</p>
+                            <p>Viel Spaß mit unseren Karten und bitte kontaktieren Sie uns falls Sie Interesse habe, wir freuen uns über jedes Feedback.</p>
+                        </aside>
+                    </section>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                keyboard: true,
+                touch: true,
+                overview: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
